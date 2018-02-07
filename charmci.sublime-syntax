@@ -2,6 +2,7 @@
 ---
 name: Charmci
 file_extensions: ci
+scope: souce.c
 
 contexts:
   main: 
