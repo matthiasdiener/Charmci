@@ -8,5 +8,6 @@ contexts:
   main: 
     - match: ""
       push: Packages/C++/C++.sublime-syntax
-      - match: \b(entry)\b
-        scope: storage.modifier.c++
+      with_prototype:
+        - match: \b(entry)\b
+          scope: storage.modifier.c++
