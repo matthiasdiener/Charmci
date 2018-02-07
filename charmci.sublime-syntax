@@ -1,0 +1,9 @@
+%YAML 1.2
+---
+name: Charmci
+file_extensions: ci
+
+contexts:
+  main: 
+    - match: ""
+    push: Packages/C++/C++.sublime-syntax
