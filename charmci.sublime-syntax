@@ -6,5 +6,7 @@ scope: source.c++
 
 contexts:
   main: 
-    - match: \b(entry)\b
-      scope: storage.modifier.c++
+    - match: ""
+      push: Packages/C++/C++.sublime-syntax
+      - match: \b(entry)\b
+        scope: storage.modifier.c++
