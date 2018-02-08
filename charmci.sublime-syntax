@@ -9,7 +9,7 @@ contexts:
     - match: ""
       push: Packages/C++/C++.sublime-syntax
       with_prototype:
-        - match: \b(entry|aggregate|threaded|sync|exclusive|nokeep|notrace|immediate|expedited|inline|local|python|accel|readwrite|writeonly|accelblock|memcritical|packed|varsize|initproc|initnode|initcall|stacksize|createhere|createhome|reductiontarget|iget|nocopy)\b
+        - match: \b(entry|aggregate|threaded|sync|exclusive|nokeep|notrace|immediate|expedited|inline|local|python|accel|readwrite|writeonly|accelblock|memcritical|packed|varsize|initproc|initnode|initcall|stacksize|createhere|createhome|reductiontarget|iget|nocopy|mutable)\b
           scope: storage.modifier.c++
-        - match: \b(mainmodule|mainchare|module|chare|array|group|nodegroup)\b
+        - match: \b(mainmodule|mainchare|module|chare|array|group|nodegroup|message|conditional)\b
           scope: storage.type.c++
