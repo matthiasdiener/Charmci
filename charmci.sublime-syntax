@@ -2,7 +2,7 @@
 ---
 name: Charmci
 file_extensions: [ci]
-scope: source.c++
+scope: source.c++.charmci
 
 contexts:
   main: 
