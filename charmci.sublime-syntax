@@ -9,7 +9,8 @@ contexts:
     - match: ""
       push: Packages/C++/C++.sublime-syntax
       with_prototype:
-        - match: \b(entry|aggregate|threaded|sync|exclusive|nokeep|notrace|immediate|expedited|inline|local|python|accel|readwrite|writeonly|accelblock|memcritical|packed|varsize|initproc|initnode|initcall|stacksize|createhere|createhome|reductiontarget|iget|nocopy|mutable|migratable)\b
-          scope: storage.modifier.c++
+        - include: scope:source.c#comments
+        - match: \b(entry|aggregate|threaded|sync|exclusive|nokeep|notrace|immediate|expedited|inline|local|python|accel|readwrite|writeonly|accelblock|memcritical|packed|varsize|initproc|initnode|initcall|stacksize|createhere|createhome|reductiontarget|iget|nocopy|mutable|migratable|readonly)\b
+          scope: storage.modifier.c++.charmci
         - match: \b(mainmodule|mainchare|module|chare|array|group|nodegroup|message|conditional)\b
-          scope: storage.type.c++
+          scope: storage.type.c++.charmci
